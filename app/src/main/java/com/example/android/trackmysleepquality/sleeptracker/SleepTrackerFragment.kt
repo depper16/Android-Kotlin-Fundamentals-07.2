@@ -16,7 +16,6 @@
 
 package com.example.android.trackmysleepquality.sleeptracker
 
-import SleepNightAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -30,6 +29,7 @@ import com.example.android.trackmysleepquality.R
 import com.example.android.trackmysleepquality.database.SleepDatabase
 import com.example.android.trackmysleepquality.databinding.FragmentSleepTrackerBinding
 import com.google.android.material.snackbar.Snackbar
+
 
 class SleepTrackerFragment : Fragment() {
 
@@ -63,7 +63,6 @@ class SleepTrackerFragment : Fragment() {
                 adapter.submitList(it)
             }
         })
-
 
         // Specify the current activity as the lifecycle owner of the binding.
         // This is necessary so that the binding can observe LiveData updates.
