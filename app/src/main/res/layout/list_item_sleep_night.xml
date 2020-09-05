@@ -15,11 +15,16 @@
   -->
 
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
+    <data>
+        <variable
+            name="sleep"
+            type="com.example.android.trackmysleepquality.database.SleepNight"/>
+    </data>
 
     <ImageView
         android:id="@+id/quality_image"
@@ -55,4 +60,4 @@
         app:layout_constraintStart_toStartOf="@+id/sleep_length"
         app:layout_constraintTop_toBottomOf="@+id/sleep_length"
         tools:text="Excellent!!!" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
